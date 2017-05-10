@@ -46,8 +46,28 @@
     <string name="error_internet_not_connected">Not connected to internet. Please check your internet connection or try again later.</string>
     <string name="error_fb_login_failed">Facebook Login failed!!</string>
     <string name="error_not_a_valid_image_file">File is not a valid image.</string>
+    <string name="error_invalid_data">Invalid Data</string>
 
     <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
     <string name="title_settings_dialog">Permissions Required</string>
+    
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_sign_in">Sign In</string>
+
+    <!--Edit Text-->
+    <string name="edit_text_name">Name</string>
+    <string name="edit_text_phone_number">Phone Number</string>
+    <string name="edit_text_email">Email</string>
+    <string name="edit_text_data_of_birth">Date of Birth</string>
+    <string name="edit_text_password">Password</string>
+    <string name="edit_text_confirm_password">Confirm Password</string>
+    <string name="edit_text_email_or_phone_number">Email/Phome Number</string>
+    <string name="edit_text_phone_start">+91</string>
+    <string name="edit_text_select_gender">Select\nGender:</string>
+    <!-- Radio button-->
+    <string name="radio_button_male">Male</string>
+    <string name="radio_button_female">Female</string>
+    <string name="accept_terms_and_condition">I accept <u>Terms and Service </u>and<u> Privacy Policy</u></string>
+
 
 </resources>
