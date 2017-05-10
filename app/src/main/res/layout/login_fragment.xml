@@ -2,7 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/etEmail"
+        style="@style/edit_text"
+        android:hint="@string/edit_text_email_or_phone_number"
+        android:inputType="text" />
+
+    <com.skeleton.util.customview.MaterialEditText
+        android:id="@+id/etPassword"
+        style="@style/edit_text"
+        android:hint="@string/edit_text_password"
+        android:inputType="textPassword" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        style="@style/checkBox"
+        android:layout_gravity="center"
+        android:text="@string/remember_me"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etFrogetPassword"
+        style="@style/edit_text"
+        android:hint="@string/forget_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignin"
+        style="@style/btnPrimary"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@color/colorPrimary"
+        android:text="@string/btn_sign_in" />
+
+    <Button
+        android:id="@+id/btnSignUpWithPassword"
+        style="@style/btnPrimary"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@color/colorAccent"
+        android:text="@string/btn_sign_in_with_facebook" />
+
 
 </LinearLayout>

@@ -50,7 +50,7 @@
 
     <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
     <string name="title_settings_dialog">Permissions Required</string>
-    
+
     <string name="btn_sign_up">Sign Up</string>
     <string name="btn_sign_in">Sign In</string>
 
@@ -68,6 +68,9 @@
     <string name="radio_button_male">Male</string>
     <string name="radio_button_female">Female</string>
     <string name="accept_terms_and_condition">I accept <u>Terms and Service </u>and<u> Privacy Policy</u></string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password"><u><b>Froger Password?</b></u></string>
+    <string name="btn_sign_in_with_facebook">SignIn With Facebook</string>
 
 
 </resources>
