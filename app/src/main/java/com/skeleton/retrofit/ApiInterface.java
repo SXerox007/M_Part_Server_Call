@@ -1,13 +1,19 @@
 package com.skeleton.retrofit;
 
 
+import org.json.JSONObject;
+
 import java.util.HashMap;
 
+import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.Header;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.PartMap;
 
 import static com.skeleton.constant.ApiKeyConstant.AUTHORIZATION;
 
@@ -17,7 +23,25 @@ import static com.skeleton.constant.ApiKeyConstant.AUTHORIZATION;
  */
 public interface ApiInterface {
     String UPDATE_LOCATION = "api/v1/user/updateLocation";
+    String USER_SIGNUP = "api/user/register";
+    String USER_LOGIN = "api/user/login";
 
+    /**
+     * @param authorization auth
+     * @param map           map
+     * @return Post User_Login
+     */
+    @POST(USER_LOGIN)
+    Call<CommonResponse> userLogin(@Header(AUTHORIZATION) String authorization,
+                                   @Body HashMap<String, String> map);
+
+    /**
+     * @param map map
+     * @return return response
+     */
+    @Multipart
+    @POST(USER_SIGNUP)
+    Call<JSONObject> userRegister(@PartMap HashMap<String, RequestBody> map);
 
 //    /**
 //     * @param map
