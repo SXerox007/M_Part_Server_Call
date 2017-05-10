@@ -231,6 +231,7 @@ public class SignUpFragment extends BaseFragment {
             @Override
             public void success(final JSONObject response) {
                 Log.e("debug", "POST Sucess");
+
             }
 
             @Override
